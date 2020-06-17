@@ -1,0 +1,158 @@
+.topnav {
+    background-image: linear-gradient(to bottom right, grey, black);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+h1
+{
+  width: 450px;
+  padding-left: 50px;
+  font-size: 40px;
+  font-style: "Lucida Calligraphy";
+  background-image: radial-gradient(circle, #ea1111, #ee2c28, #f13f3b, #f24e4c, #f35d5d);
+  border:outset silver;
+   box-shadow: 5px 5px grey;
+}
+
+body
+{
+  background-image: linear-gradient(to right top, #7a7a81, #95959d, #b1b1ba, #ceced7, #ebebf6);
+}
+
+.back
+{
+  float: right;
+  font-size: 20px;
+  width: auto;
+  margin:25px 50px 0 0;
+  border-radius: 20px;
+  font-family: "times new roman", sans-serif;
+  font-weight: bold;
+  background-color: orangered;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+  float: right;
+  border:outset grey;
+}
+
+.back:hover
+{
+    font-size: 22px;
+    background-color: white;
+    color: orangered;
+    font-weight: bold;
+    border:outset orange;
+}
+
+
+.container 
+{
+  margin: 0 auto;
+  min-width: 500px;
+  width: 45%;
+  text-align: left;
+  font-family: rockwell;
+  font-weight: bold;
+}
+
+#list-items
+{
+  background-color: transparent;
+  padding-top: 10px;
+}
+
+input.checkbox
+{
+  width: 20px;
+  height: 20px;
+}
+
+form 
+{
+  outline: 0;
+  height: 36px;
+  margin-top: 5%;
+  /*border: 3px solid #3b3b3b;*/
+}
+
+input[type="text"] 
+{
+  outline: 0;
+  width: 64%;
+  height: 32px;
+  border: none;
+  font-size: 18px;
+  font-weight: normal;
+  padding-left: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+ul 
+{
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+hr 
+{
+  border-bottom: 0;
+  margin: 15px 0;
+}
+
+input[type="checkbox"] { width: 30px; }
+
+a.remove 
+{
+  float: right;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.remove:hover
+{
+  font-size: 30px;
+  color: rgb(255,0,0);
+}
+
+.completed { text-decoration: line-through; }
+
+.add
+{
+  outline: 0;
+  float: right;
+  width: 34%;
+  height: 36px;
+  color:#000;
+  font-size: 21px;
+  border: outset grey;
+  cursor: pointer;
+  background-image: linear-gradient(to left bottom, #fff4f4, #d0c6c6, #a39b9b, #787171, #504a4a);
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: rockwell;
+}
+
+.add:hover
+{
+  background-image: radial-gradient(circle, #607878, #4b5c5c, #364242, #232929, #101212);
+  color: #fff;
+  font-weight: bold;
+  border:outset orange;
+  /*font-size:25px;*/
+}
+
+#list-items
+{
+  font-size: 25px;
+  font-family: "times new roman";
+}

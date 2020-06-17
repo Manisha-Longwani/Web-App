@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ToDo List</title>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <!--<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>-->
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="http://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+        <script src="script.js"></script>
+        <style>
+        body { background-color:#FF4500; fotn-family:'Quicksand';}
+        .container { margin:150px auto;}
+        </style>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <img src="C:\Users\User\Desktop\ToDo List Web App\images\logo.png" alt="Logo" width="200px" style="margin: 25px 0 0 65px;">
+            <button onclick="back()" class="back">← Go Back</button>
+        </div>
+        
+        <div class="container">
+            <h1>Lineup your tasks...!</h1>
+            <ul id="list-items"></ul>
+            <form class="add-items">
+                <input type="text" class="form-control" id="todo-list-item" placeholder="What do you need to do today?">
+                <button class="add" type="submit">Add to List</button>
+            </form>
+        </div>
+
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36251023-1']);
+          _gaq.push(['_setDomainName', 'jqueryscript.net']);
+          _gaq.push(['_trackPageview']);
+
+  (function() 
+  {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  function back()
+  {
+    location.replace("index.html");
+  }
+</script>
+<!--<footer style="margin-top:50px; color: black; margin-left: 20px;" >
+        Copyright &copy; 2020 Manisha Longwani
+    </footer>-->
+</body>
+</html>

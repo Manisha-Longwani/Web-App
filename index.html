@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="C:\Users\User\Desktop\ToDo List Web App\images\logo.png" width="200px" style="margin: 25px 0 0 65px;" alt="Logo">
+
+        <!--login button--> <!--login form html & css-->
+        <button onclick="document.getElementById('id01').style.display='block'" class="login">Login
+        </button>
+
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="#" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="C:\Users\User\Desktop\ToDo List Web App\images\logo.png" width="120px" alt="Logo">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required/>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required/>
+
+                    <button type="submit" style="background-image: linear-gradient(#ffa500, #ff8b00, #ff6f00, #ff4c00, #ff0000); font-size: 17px; font-family: 'times new roman';">Login</button>
+                    <label>
+                        <input type="checkbox" checked="unchecked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:white;">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <!--login form Script-->
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) 
+            {
+                if (event.target == modal) 
+                {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+        <!--Sign Up form-->
+        <button onclick="#" class="sign">Sign Up</button>
+    </div>
+
+    <!--Main content-->
+    <div class="content" style="font-family: 'Montserrat', sans-serif;">
+            <div style="width: 65%; height: 90%;">
+                <h1 style="font-size: 50px; margin-left: 50px;">WELCOME USERS...!</h1>
+                <br><br>
+                <h2 style="margin-left: 50px;">
+                    Let's manage the time together.<br/> We are here to manage your tasks...<br/> List everything that you have to do.
+                </h2>
+                <br><br>
+                <ul>
+                    <li>
+                        <h3>
+                            FEELING PRODUCTIVE...!
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            HELPS YOU TO DELEGATE...!
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            RELEIVES STRESS...!
+                        </h3>
+                    </li>   
+                </ul>
+            </div>
+    </div>
+
+
+<!--List image on the website to the right-->
+    <div class="right">
+        <img src="C:\Users\User\Desktop\ToDo List Web App\images\list.png" style="width:80%; height:70%;"/>
+
+    </div>
+
+    <!--Button to get started-->
+    <div style="height: 100px; width:200px; float:right; position: relative;top:-670px;">
+        <button onclick="getStarted()" class="getstarted">Get Started →</button>
+    </div>
+
+    <footer style="margin-top:50px; color: grey; margin-left: 20px;" >
+        Copyright &copy; 2020 Manisha Longwani
+    </footer>
+
+    <!--Get started script-->
+    <script type="text/javascript">
+        function getStarted()
+        {
+            location.replace("todolist.html");
+        }
+    </script>
+
+</body>
+</html>
